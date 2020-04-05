@@ -1,0 +1,16 @@
+<p>Podaj imie:</p>
+<input type="text" #name>
+<button (click)="sayHello(name.value)">Przywitaj się</button>
+<br>
+{{message}}
+<br>
+<br>
+{{rootObject.rates.PLN}}
+<br>
+<p>Podaj wartość PLN w EUR</p>
+<input type="text" #currency>
+<button (click)="check(currency.value)">Sprawdź czy trafiłeś!</button>
+<br>
+{{result}}
+
+
